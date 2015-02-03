@@ -39,6 +39,7 @@ import android.widget.TextView;
 import com.illusion.box.fragments.*;
 import com.illusion.box.fragments.sb.*;
 import com.illusion.box.fragments.qs.*;
+import com.illusion.box.fragments.recents.*;
 
 public class SettingsActivity extends PreferenceActivity {
 
@@ -196,6 +197,7 @@ public class SettingsActivity extends PreferenceActivity {
         QsSettings.class.getName(),
         InterfaceSettings.class.getName(),
         QSTiles.class.getName(),
+        RecentSettings.class.getName(),
     };
 
     @Override

@@ -22,4 +22,6 @@
     <string name="notification_drawer_settings_title">Tiles</string>
     <string name="notification_drawer_misc_settings_title">Misc QS</string>
 
+    <string name="recent_misc_title">Extra recent options</string>
+
 </resources>
