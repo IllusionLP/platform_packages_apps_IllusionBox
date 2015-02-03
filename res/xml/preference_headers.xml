@@ -15,4 +15,13 @@
         android:fragment="com.illusion.box.fragments.qs.QsSettings"
         android:icon="@drawable/illusion_notification" />
 
+    <header
+        android:key="lock_clock"
+        android:title="@string/lock_clock_title"
+        android:icon="@drawable/illusion_clock">
+        <intent android:action="android.intent.action.MAIN"
+            android:targetPackage="com.cyanogenmod.lockclock"
+            android:targetClass="com.cyanogenmod.lockclock.preference.Preferences" />
+    </header>
+
 </preference-headers>
