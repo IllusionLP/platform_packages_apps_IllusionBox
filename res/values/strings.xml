@@ -18,4 +18,8 @@
     <string name="status_bar_clock_title">Basic bar</string>
     <string name="status_bar_misc_title">Misc</string>
 
+    <string name="qs_settings_title">Notification drawer</string>
+    <string name="notification_drawer_settings_title">Tiles</string>
+    <string name="notification_drawer_misc_settings_title">Misc QS</string>
+
 </resources>

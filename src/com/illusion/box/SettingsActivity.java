@@ -38,6 +38,7 @@ import android.widget.TextView;
 
 import com.illusion.box.fragments.*;
 import com.illusion.box.fragments.sb.*;
+import com.illusion.box.fragments.qs.*;
 
 public class SettingsActivity extends PreferenceActivity {
 
@@ -192,6 +193,9 @@ public class SettingsActivity extends PreferenceActivity {
 
     private static final String[] ENTRY_FRAGMENTS = {
         InterfaceSettings.class.getName(),
+        QsSettings.class.getName(),
+        InterfaceSettings.class.getName(),
+        QSTiles.class.getName(),
     };
 
     @Override
