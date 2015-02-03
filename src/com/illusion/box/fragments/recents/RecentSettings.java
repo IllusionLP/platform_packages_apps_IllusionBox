@@ -90,9 +90,8 @@ public class RecentSettings extends SettingsPreferenceFragment {
 
         public StatusBarAdapter(FragmentManager fm) {
             super(fm);
-            frags[0] = new RecentMiscSettings();
-            //frags[1] = new Traffic();
-            //frags[2] = new MiscStatusBar();
+            frags[0] = new OmniSwitch();
+            frags[1] = new RecentMiscSettings();
         }
 
         @Override
@@ -114,8 +113,7 @@ public class RecentSettings extends SettingsPreferenceFragment {
     private String[] getTitles() {
         String titleString[];
         titleString = new String[]{
-                    //getString(R.string.status_bar_clock_title),
-                    //getString(R.string.network_traffic_title),
+                    getString(R.string.omniswitch_settings_title),
                     getString(R.string.recent_misc_title)};
         return titleString;
     }
