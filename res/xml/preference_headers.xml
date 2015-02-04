@@ -10,6 +10,12 @@
         android:title="@string/interface_settings_title" />
 
     <header
+        android:id="@+id/button_settings"
+        android:fragment="com.illusion.box.fragments.navigation.NavigationSettings"
+        android:title="@string/button_settings_title"
+        android:icon="@drawable/illusion_navigation"/>
+
+    <header
         android:key="notification_drawer_settings"
         android:title="@string/qs_settings_title"
         android:fragment="com.illusion.box.fragments.qs.QsSettings"

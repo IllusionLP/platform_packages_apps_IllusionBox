@@ -32,4 +32,7 @@
     <string name="omniswitch_first_time_title">Information</string>
     <string name="omniswitch_first_time_message">Make sure you have enabled OmniSwitch. You can do this by using \"Settings\" below</string>
 
+    <string name="navigation_bar_title">Navigation bar</string>
+    <string name="navigation_bar_dimen_title">Bar size</string>
+    <string name="buttons_title">Misc. keys</string>
 </resources>
