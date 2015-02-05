@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.illusion.box.fragments.sb;
+package com.illusion.box.fragments.sc;
 
 import android.app.ActionBar;
 import android.app.Activity;
@@ -35,14 +35,14 @@ import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.Utils;
 
-import com.illusion.box.fragments.sb.*;
+import com.illusion.box.fragments.sc.*;
 
 import java.lang.Exception;
 import java.util.ArrayList;
 
-public class InterfaceSettings extends SettingsPreferenceFragment {
+public class ShortcutSettings extends SettingsPreferenceFragment {
 
-    private static final String TAG = "interface_settings_title";
+    private static final String TAG = "shortcut_title";
 
     PagerTabStrip mPagerTabStrip;
     ViewPager mViewPager;
@@ -61,7 +61,6 @@ public class InterfaceSettings extends SettingsPreferenceFragment {
         View view = inflater.inflate(R.layout.tab_ui_sb, container, false);
         mViewPager = (ViewPager) view.findViewById(R.id.viewPager);
         mPagerTabStrip = (PagerTabStrip) view.findViewById(R.id.pagerTabStrip);
-        mPagerTabStrip.setTabIndicatorColorResource(android.R.color.white);
 
         StatusBarAdapter StatusBarAdapter = new StatusBarAdapter(getFragmentManager());
         mViewPager.setAdapter(StatusBarAdapter);
@@ -90,10 +89,7 @@ public class InterfaceSettings extends SettingsPreferenceFragment {
 
         public StatusBarAdapter(FragmentManager fm) {
             super(fm);
-            frags[0] = new StatusBarClockStyle();
-            frags[1] = new BatteryBar();
-            frags[2] = new Traffic();
-            frags[3] = new MiscStatusBar();
+            frags[0] = new GestureAnywhereSettings();
         }
 
         @Override
@@ -115,11 +111,9 @@ public class InterfaceSettings extends SettingsPreferenceFragment {
     private String[] getTitles() {
         String titleString[];
         titleString = new String[]{
-                    getString(R.string.status_bar_clock_title),
-                    getString(R.string.battery_bar_title),
-                    getString(R.string.network_traffic_title),
-                    getString(R.string.status_bar_misc_title)};
+                    getString(R.string.gesture_anywhere_title)};
         return titleString;
     }
 }
+
 

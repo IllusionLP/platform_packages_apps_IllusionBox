@@ -38,6 +38,7 @@ import android.widget.TextView;
 
 import com.illusion.box.fragments.*;
 import com.illusion.box.fragments.sb.*;
+import com.illusion.box.fragments.sc.*;
 import com.illusion.box.fragments.qs.*;
 import com.illusion.box.fragments.recents.*;
 import com.illusion.box.fragments.navigation.*;
@@ -203,6 +204,7 @@ public class SettingsActivity extends PreferenceActivity {
         NavBar.class.getName(),
         NavBarDimen.class.getName(),
         PowerMenuActions.class.getName(),
+        ShortcutSettings.class.getName(),
     };
 
     @Override

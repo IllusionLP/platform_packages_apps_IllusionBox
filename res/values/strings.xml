@@ -35,4 +35,7 @@
     <string name="navigation_bar_title">Navigation bar</string>
     <string name="navigation_bar_dimen_title">Bar size</string>
     <string name="buttons_title">Misc. keys</string>
+
+    <string name="shortcut_title">Shortcuts</string>
+
 </resources>
