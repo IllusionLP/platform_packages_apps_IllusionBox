@@ -208,12 +208,6 @@
         android:key="navigation_bar"
         android:title="@string/navigation_bar_category" >
 
-        <SwitchPreference
-            android:key="disable_nav_keys"
-            android:title="@string/disable_navkeys_title"
-            android:summary="@string/disable_navkeys_summary"
-            android:defaultValue="false" />
-
         <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
             android:key="navigation_bar_menu_arrow_keys"
             android:title="@string/navigation_bar_arrow_keys_title"
