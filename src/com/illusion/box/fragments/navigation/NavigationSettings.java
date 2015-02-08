@@ -91,8 +91,9 @@ public class NavigationSettings extends SettingsPreferenceFragment {
         public StatusBarAdapter(FragmentManager fm) {
             super(fm);
             frags[0] = new NavBar();
-            frags[1] = new NavBarDimen();
-            frags[2] = new ButtonSettings();
+            frags[1] = new NavRing();
+            frags[2] = new NavBarDimen();
+            frags[3] = new ButtonSettings();
         }
 
         @Override
@@ -115,6 +116,7 @@ public class NavigationSettings extends SettingsPreferenceFragment {
         String titleString[];
         titleString = new String[]{
                     getString(R.string.navigation_bar_title),
+                    getString(R.string.navigation_ring_title),
                     getString(R.string.navigation_bar_dimen_title),
                     getString(R.string.buttons_title)};
         return titleString;
