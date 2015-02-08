@@ -166,7 +166,7 @@
             android:title="@string/power_menu_title"
             android:fragment="com.illusion.box.fragments.navigation.PowerMenuActions" />
 
-        <SwitchPreference
+        <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
             android:key="power_end_call"
             android:title="@string/power_end_call_title"
             android:summary="@string/power_end_call_summary"
@@ -219,6 +219,11 @@
             android:title="@string/navigation_bar_left_title"
             android:summary="@string/navigation_bar_left_summary"
             android:defaultValue="false" />
+
+        <com.android.settings.cyanogenmod.SecureSettingSwitchPreference
+            android:key="search_panel_enabled"
+            android:title="@string/navigation_ring_enable_title"
+            android:defaultValue="true" />
 
     </PreferenceCategory>
 
