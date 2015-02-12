@@ -203,7 +203,6 @@ public class SettingsActivity extends PreferenceActivity {
         NavigationSettings.class.getName(),
         NavBar.class.getName(),
         NavRing.class.getName(),
-        NavBarDimen.class.getName(),
         PowerMenuActions.class.getName(),
         ShortcutSettings.class.getName(),
     };

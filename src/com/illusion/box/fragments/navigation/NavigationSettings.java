@@ -92,8 +92,7 @@ public class NavigationSettings extends SettingsPreferenceFragment {
             super(fm);
             frags[0] = new NavBar();
             frags[1] = new NavRing();
-            frags[2] = new NavBarDimen();
-            frags[3] = new ButtonSettings();
+            frags[2] = new ButtonSettings();
         }
 
         @Override
@@ -117,7 +116,6 @@ public class NavigationSettings extends SettingsPreferenceFragment {
         titleString = new String[]{
                     getString(R.string.navigation_bar_title),
                     getString(R.string.navigation_ring_title),
-                    getString(R.string.navigation_bar_dimen_title),
                     getString(R.string.buttons_title)};
         return titleString;
     }
