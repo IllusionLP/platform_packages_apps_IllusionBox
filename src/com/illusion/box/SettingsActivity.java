@@ -42,6 +42,7 @@ import com.illusion.box.fragments.sc.*;
 import com.illusion.box.fragments.qs.*;
 import com.illusion.box.fragments.recents.*;
 import com.illusion.box.fragments.navigation.*;
+import com.illusion.box.fragments.lock.*;
 
 public class SettingsActivity extends PreferenceActivity {
 
@@ -206,6 +207,7 @@ public class SettingsActivity extends PreferenceActivity {
         NavBarDimen.class.getName(),
         PowerMenuActions.class.getName(),
         ShortcutSettings.class.getName(),
+        LockScreenSettings.class.getName(),
     };
 
     @Override
