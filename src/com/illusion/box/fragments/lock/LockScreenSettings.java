@@ -36,7 +36,7 @@ import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.Utils;
 
 import com.illusion.box.fragments.lock.*;
-
+import com.android.settings.cyanogenmod.LockscreenShortcuts;
 import java.lang.Exception;
 import java.util.ArrayList;
 
@@ -90,8 +90,9 @@ public class LockScreenSettings extends SettingsPreferenceFragment {
 
         public StatusBarAdapter(FragmentManager fm) {
             super(fm);
-            frags[0] = new LockScreenWeatherSettings();
-            frags[1] = new LockScreenColorSettings();
+            frags[0] = new LockscreenShortcuts();
+            frags[1] = new LockScreenWeatherSettings();
+            frags[2] = new LockScreenColorSettings();
         }
 
         @Override
@@ -113,6 +114,7 @@ public class LockScreenSettings extends SettingsPreferenceFragment {
     private String[] getTitles() {
         String titleString[];
         titleString = new String[]{
+                    getString(R.string.shortcut_title),
                     getString(R.string.lock_screen_weather_settings_title),
                     getString(R.string.lock_screen_color_settings_summary)};
         return titleString;

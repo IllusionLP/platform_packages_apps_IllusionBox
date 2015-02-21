@@ -280,7 +280,7 @@ public class StatusBarClockStyle extends SettingsPreferenceFragment
 
                 // Set an EditText view to get user input
                 final EditText input = new EditText(getActivity());
-                input.setText(mCustomGreetingText != null ? mCustomGreetingText : "Welcome to Bliss");
+                input.setText(mCustomGreetingText != null ? mCustomGreetingText : "Welcome to Illusion");
                 alert.setView(input);
                 alert.setPositiveButton(getResources().getString(R.string.ok), new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int whichButton) {

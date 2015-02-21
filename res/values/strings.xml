@@ -18,7 +18,7 @@
     <string name="status_bar_clock_title">Basic bar</string>
     <string name="status_bar_misc_title">Misc</string>
 
-    <string name="dlg_reset_values_message">Reset values to\nAndroid- or Bliss default?</string>
+    <string name="dlg_reset_values_message">Reset values to\nAndroid- or Illusion default?</string>
     <string name="dlg_reset_android">Android</string>
     <string name="dlg_reset_bliss">Illusion</string>
 
@@ -67,6 +67,7 @@
     <string name="text_title">Text</string>
     <string name="colors_title">Colors</string>
     <string name="icons_title">Icons</string>
+    <string name="shortcut_title">Shortcuts</string>
 
     <!-- Weather settings -->
     <string name="weather_show_weather_title">Show weather</string>
