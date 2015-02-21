@@ -68,6 +68,7 @@
     <string name="colors_title">Colors</string>
     <string name="icons_title">Icons</string>
     <string name="shortcut_title">Shortcuts</string>
+    <string name="extra_shortcut_title">Extra row</string>
 
     <!-- Weather settings -->
     <string name="weather_show_weather_title">Show weather</string>

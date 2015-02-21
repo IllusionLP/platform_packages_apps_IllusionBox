@@ -43,6 +43,7 @@ import com.illusion.box.fragments.qs.*;
 import com.illusion.box.fragments.recents.*;
 import com.illusion.box.fragments.navigation.*;
 import com.illusion.box.fragments.lock.*;
+import com.android.settings.slim.dslv.*;
 
 public class SettingsActivity extends PreferenceActivity {
 
@@ -208,6 +209,7 @@ public class SettingsActivity extends PreferenceActivity {
         PowerMenuActions.class.getName(),
         ShortcutSettings.class.getName(),
         LockScreenSettings.class.getName(),
+        ActionListViewSettings.class.getName(),
     };
 
     @Override
