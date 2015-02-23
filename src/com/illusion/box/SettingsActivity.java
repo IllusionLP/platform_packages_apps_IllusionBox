@@ -37,6 +37,7 @@ import android.widget.Switch;
 import android.widget.TextView;
 
 import com.illusion.box.fragments.*;
+import com.illusion.box.fragments.animation.*;
 import com.illusion.box.fragments.sb.*;
 import com.illusion.box.fragments.sc.*;
 import com.illusion.box.fragments.qs.*;
@@ -44,6 +45,9 @@ import com.illusion.box.fragments.recents.*;
 import com.illusion.box.fragments.navigation.*;
 import com.illusion.box.fragments.lock.*;
 import com.android.settings.slim.dslv.*;
+import com.android.settings.slim.fragments.LockscreenShortcutFragment;
+
+import com.android.settings.cyanogenmod.LockscreenShortcuts;
 
 public class SettingsActivity extends PreferenceActivity {
 
@@ -210,6 +214,10 @@ public class SettingsActivity extends PreferenceActivity {
         ShortcutSettings.class.getName(),
         LockScreenSettings.class.getName(),
         ActionListViewSettings.class.getName(),
+        LockscreenShortcutFragment.class.getName(),
+        Animation.class.getName(),
+        AnimationControls.class.getName(),
+        AnimBarPreference.class.getName(),
     };
 
     @Override

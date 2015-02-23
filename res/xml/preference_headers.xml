@@ -40,6 +40,12 @@
         android:icon="@drawable/illusion_recents" />
 
     <header
+        android:key="animation_settings"
+        android:title="@string/animation_title"
+        android:fragment="com.illusion.box.fragments.animation.Animation" 
+        android:icon="@drawable/illusion_animations" />
+
+    <header
         android:key="lock_clock"
         android:title="@string/lock_clock_title"
         android:icon="@drawable/illusion_clock">

@@ -121,6 +121,15 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".fragments.animation.Animation"
+            android:label="@string/animation_title" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.illusion.box.SHORTCUT" />
+            </intent-filter>
+        </activity>
+        <activity
  	    android:name=".CreateShortcut"
              android:theme="@style/Theme.CreateShortCut" >
  	  <intent-filter>
