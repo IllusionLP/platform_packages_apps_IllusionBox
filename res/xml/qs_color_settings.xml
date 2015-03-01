@@ -15,6 +15,12 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:title="@string/qs_colors_title">
 
+        <SwitchPreference
+            android:key="qs_transparent_shade"
+            android:title="@string/qs_transparent_shade_title"
+            android:summary="@string/qs_transparent_shade_summary"
+            android:defaultValue="false" />
+
         <net.margaritov.preference.colorpicker.ColorPickerPreference
             android:key="qs_background_color"
             android:title="@string/background_title"
