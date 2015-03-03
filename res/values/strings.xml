@@ -147,4 +147,8 @@
     <string name="listview_overshoot_interpolator">Overshoot</string>
     <string name="listview_anticipate_overshoot_interpolator">Anticipate and overshoot</string>
     <string name="listview_bounce_interpolator">Bounce</string>
+
+    <!-- Statusbar crDroid logo -->
+    <string name="status_bar_illusion_logo_title">Illusion logo</string>
+    <string name="status_bar_illusion_logo_summary">Enable Kronic Owl logo on statusbar</string>
 </resources>
