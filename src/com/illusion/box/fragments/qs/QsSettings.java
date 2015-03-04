@@ -91,7 +91,8 @@ public class QsSettings extends SettingsPreferenceFragment {
         public StatusBarAdapter(FragmentManager fm) {
             super(fm);
             frags[0] = new NotificationDrawerSettings();
-            frags[1] = new NotificationDrawerMiscSettings();
+            frags[1] = new QSColors();
+            frags[2] = new NotificationDrawerMiscSettings();
         }
 
         @Override
@@ -114,6 +115,7 @@ public class QsSettings extends SettingsPreferenceFragment {
         String titleString[];
         titleString = new String[]{
                     getString(R.string.notification_drawer_settings_title),
+                    getString(R.string.colors_title),
                     getString(R.string.notification_drawer_misc_settings_title)};
         return titleString;
     }

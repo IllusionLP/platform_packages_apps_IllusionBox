@@ -151,4 +151,16 @@
     <!-- Statusbar crDroid logo -->
     <string name="status_bar_illusion_logo_title">Illusion logo</string>
     <string name="status_bar_illusion_logo_summary">Enable Kronic Owl logo on statusbar</string>
+
+    <!-- QuickSettings colors -->
+    <string name="background_title">Background</string>
+    <string name="icon_title">Icon</string>
+    <string name="qs_colors_title">Custom Color Options</string>
+    <string name="reset_android">Android</string>
+    <string name="reset_swag">Swag</string>
+    <string name="colors_title">Colors</string>
+    <string name="text_title">Text</string>
+    <string name="qs_transparent_shade_title">Shade alpha</string>
+    <string name="qs_transparent_shade_summary">Ability to apply color alpha value and make notification shade transparent.</string>
+
 </resources>
