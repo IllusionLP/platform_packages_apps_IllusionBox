@@ -65,7 +65,7 @@
     <string name="lock_screen_weather_settings_summary">Customize Weather</string>
     <string name="lock_screen_color_settings_summary">Customize colors</string>
     <string name="text_title">Text</string>
-    <string name="colors_title">Colors</string>
+    <string name="colors_title">Misc</string>
     <string name="icons_title">Icons</string>
     <string name="shortcut_title">Shortcuts</string>
     <string name="extra_shortcut_title">Extra row</string>

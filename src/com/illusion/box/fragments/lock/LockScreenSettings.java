@@ -120,7 +120,7 @@ public class LockScreenSettings extends SettingsPreferenceFragment {
                     getString(R.string.shortcut_title),
                     getString(R.string.extra_shortcut_title),
                     getString(R.string.lock_screen_weather_settings_title),
-                    getString(R.string.lock_screen_color_settings_summary)};
+                    getString(R.string.colors_title)};
         return titleString;
     }
 }
