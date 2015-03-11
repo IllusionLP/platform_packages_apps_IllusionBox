@@ -163,4 +163,5 @@
     <string name="qs_transparent_shade_title">Shade alpha</string>
     <string name="qs_transparent_shade_summary">Ability to apply color alpha value and make notification shade transparent.</string>
 
+    <string name="lockscreen_visualizer_title">Display music visualizer</string>
 </resources>
