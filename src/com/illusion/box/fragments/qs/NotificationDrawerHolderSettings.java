@@ -86,7 +86,9 @@ public class NotificationDrawerHolderSettings extends SettingsPreferenceFragment
 
         public StatusBarAdapter(FragmentManager fm) {
             super(fm);
-            frags[0] = new NotificationDrawerSettings();
+            frags[0] = new QSTiles();
+            frags[1] = new QSColors();
+            frags[2] = new NotificationDrawerSettings();
         }
 
         @Override
@@ -108,7 +110,9 @@ public class NotificationDrawerHolderSettings extends SettingsPreferenceFragment
     private String[] getTitles() {
         String titleString[];
         titleString = new String[]{
-                    getString(R.string.notification_tiles_title)};
+                    getString(R.string.tiles_title),
+                    getString(R.string.qs_colors_title),
+                    getString(R.string.notification_tiles_homeless_title)};
         return titleString;
     }
 }

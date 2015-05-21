@@ -18,7 +18,7 @@
      <header
         android:id="@+id/notification_drawer_settings"
         android:title="@string/notification_drawer_title"
-        android:fragment="com.illusion.box.fragments.qs.NotificationDrawerSettings"
+        android:fragment="com.illusion.box.fragments.qs.NotificationDrawerHolderSettings"
         android:icon="@drawable/ic_settings_notification_drawer_exposed"
         />
 

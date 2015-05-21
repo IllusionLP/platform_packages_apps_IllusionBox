@@ -27,7 +27,8 @@
     <string name="lockscreen_settings_title">Lockscreen</string>
     <string name="battery_bar_title">BatteryBar</string>
     <string name="notification_tiles_title">Tile options</string>
-    <string name="notification_tiles_homeless_title">Homeless settings</string>
+    <string name="notification_tiles_homeless_title">Homeless qs settings</string>
+    <string name="tiles_title">Tiles</string>
     <string name="interface_settings">Interface</string>
     <string name="navigation_misc_title">Navigation bar</string>
     <string name="navigation_title">Navigation bar</string>
@@ -361,6 +362,14 @@
 
     <!-- Navigation bar button color -->
     <string name="navbar_button_tint_title">Navigation button tint</string>
+    <!-- QuickSettings colors -->
+    <string name="background_title">Background</string>
+    <string name="icon_title">Icon</string>
+    <string name="qs_colors_title">Custom Color Options</string>
+    <string name="reset_android">Android</string>
+    <string name="reset_swag">Swag</string>
+    <string name="colors_title">Colors</string>
+    <string name="text_title">Text</string>
 
     <!-- App sidebar -->
     <string name="app_sidebar_title">Appbar</string>

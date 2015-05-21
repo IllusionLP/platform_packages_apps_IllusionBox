@@ -19,7 +19,7 @@
     android:layout_width="match_parent"
     android:gravity="center_vertical"
     android:padding="16dp"
-    android:background="@color/dashboard_background_color">
+    android:background="@color/dashboard_category_background_color">
 
     <com.illusion.box.fragments.qs.DraggableGridView
         android:id="@+id/qs_gridview"
