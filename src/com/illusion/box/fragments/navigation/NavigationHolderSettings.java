@@ -85,8 +85,9 @@ public class NavigationHolderSettings extends SettingsPreferenceFragment {
         public StatusBarAdapter(FragmentManager fm) {
             super(fm);
             frags[0] = new NavbarSettings();
-            frags[1] = new NavbarStyleDimenSettings();
-            frags[2] = new NavBarButtonStyle();
+            frags[1] = new NavRing();
+            frags[2] = new NavbarStyleDimenSettings();
+            frags[3] = new NavBarButtonStyle();
         }
 
         @Override
@@ -109,6 +110,7 @@ public class NavigationHolderSettings extends SettingsPreferenceFragment {
         String titleString[];
         titleString = new String[]{
                     getString(R.string.Navigation_title),
+                    getString(R.string.navigation_ring_title),
                     getString(R.string.Navigation_dimen_title),
                     getString(R.string.Navigation_color_title)};
         return titleString;

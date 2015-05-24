@@ -56,6 +56,10 @@
                     android:title="@string/title_pref_menu_location"
                     android:summary="@string/summary_pref_menu_location" />
 
+             <com.android.settings.cyanogenmod.SecureSettingSwitchPreference
+                    android:key="search_panel_enabled"
+                    android:title="@string/navigation_ring_enable_title"
+                    android:defaultValue="true" />
         </PreferenceCategory>
 
 </PreferenceScreen>
