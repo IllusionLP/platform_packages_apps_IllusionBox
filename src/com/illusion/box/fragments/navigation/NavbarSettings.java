@@ -38,14 +38,12 @@ public class NavbarSettings extends SettingsPreferenceFragment implements
     private static final String PREF_NAVBAR_MENU_DISPLAY = "pref_navbar_menu_display";
     private static final String ENABLE_NAVIGATION_BAR = "enable_nav_bar";
     private static final String PREF_BUTTON = "navbar_button_settings";
-    private static final String PREF_NAVIGATION_BAR_CAN_MOVE = "navbar_can_move";
 
     private int mNavBarMenuDisplayValue;
 
     ListPreference mMenuDisplayLocation;
     ListPreference mNavBarMenuDisplay;
     SwitchPreference mEnableNavigationBar;
-    SwitchPreference mNavigationBarCanMove;
     PreferenceScreen mButtonPreference;
 
     @Override
@@ -80,19 +78,12 @@ public class NavbarSettings extends SettingsPreferenceFragment implements
             mEnableNavigationBar.setChecked(enableNavigationBar);
             mEnableNavigationBar.setOnPreferenceChangeListener(this);
 
-        mNavigationBarCanMove = (SwitchPreference) findPreference(PREF_NAVIGATION_BAR_CAN_MOVE);
-        mNavigationBarCanMove.setChecked(Settings.System.getInt(getContentResolver(),
-                Settings.System.NAVIGATION_BAR_CAN_MOVE,
-                DeviceUtils.isPhone(getActivity()) ? 1 : 0) == 0);
-        mNavigationBarCanMove.setOnPreferenceChangeListener(this);
-
         updateNavbarPreferences(enableNavigationBar);
     }
 
     private void updateNavbarPreferences(boolean show) {
         mNavBarMenuDisplay.setEnabled(show);
         mButtonPreference.setEnabled(show);
-        mNavigationBarCanMove.setEnabled(show);
         mMenuDisplayLocation.setEnabled(show
             && mNavBarMenuDisplayValue != 1);
     }
@@ -114,11 +105,6 @@ public class NavbarSettings extends SettingsPreferenceFragment implements
                     Settings.System.NAVIGATION_BAR_SHOW,
                     ((Boolean) newValue) ? 1 : 0);
             updateNavbarPreferences((Boolean) newValue);
-            return true;
-        } else if (preference == mNavigationBarCanMove) {
-            Settings.System.putInt(getActivity().getContentResolver(),
-                    Settings.System.NAVIGATION_BAR_CAN_MOVE,
-                    ((Boolean) newValue) ? 0 : 1);
             return true;
         }
         return false;

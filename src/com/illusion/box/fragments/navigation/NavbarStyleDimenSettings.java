@@ -29,6 +29,7 @@ import android.preference.Preference;
 import android.preference.Preference.OnPreferenceChangeListener;
 import android.preference.PreferenceCategory;
 import android.preference.PreferenceScreen;
+import android.preference.SwitchPreference;
 import android.provider.Settings;
 import android.util.Log;
 import android.view.Menu;
@@ -53,12 +54,15 @@ public class NavbarStyleDimenSettings extends SettingsPreferenceFragment impleme
         "navigation_bar_width";
     private static final String KEY_DIMEN_OPTIONS =
         "navbar_dimen";
+    private static final String PREF_NAVIGATION_BAR_CAN_MOVE = 
+        "navbar_can_move";
 
     private static final int MENU_RESET = Menu.FIRST;
 
     ListPreference mNavigationBarHeight;
     ListPreference mNavigationBarHeightLandscape;
     ListPreference mNavigationBarWidth;
+    SwitchPreference mNavigationBarCanMove;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -79,14 +83,17 @@ public class NavbarStyleDimenSettings extends SettingsPreferenceFragment impleme
             (ListPreference) findPreference(PREF_NAVIGATION_BAR_WIDTH);
         mNavigationBarWidth.setOnPreferenceChangeListener(this);
 
-        boolean navbarCanMove = Settings.System.getInt(getContentResolver(),
+        mNavigationBarCanMove = (SwitchPreference) findPreference(PREF_NAVIGATION_BAR_CAN_MOVE);
+        mNavigationBarCanMove.setChecked(Settings.System.getInt(getContentResolver(),
                 Settings.System.NAVIGATION_BAR_CAN_MOVE,
-                DeviceUtils.isPhone(getActivity()) ? 1 : 0) == 1;
-
-        mNavigationBarHeightLandscape.setEnabled(!navbarCanMove);
-        mNavigationBarWidth.setEnabled(navbarCanMove);
+                DeviceUtils.isPhone(getActivity()) ? 1 : 0) == 0);
+        mNavigationBarCanMove.setOnPreferenceChangeListener(this);
 
         setHasOptionsMenu(true);
+    }
+
+    private void updateNavbarPreferences(boolean show) {
+        mNavigationBarCanMove.setEnabled(show);
     }
 
     @Override
@@ -157,6 +164,11 @@ public class NavbarStyleDimenSettings extends SettingsPreferenceFragment impleme
             Settings.System.putInt(getContentResolver(),
                     Settings.System.NAVIGATION_BAR_HEIGHT_LANDSCAPE,
                     height);
+            return true;
+        } else if (preference == mNavigationBarCanMove) {
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.NAVIGATION_BAR_CAN_MOVE,
+                    ((Boolean) newValue) ? 0 : 1);
             return true;
         }
         return false;
