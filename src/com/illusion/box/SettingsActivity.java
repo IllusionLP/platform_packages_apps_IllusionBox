@@ -50,6 +50,7 @@ import com.android.settings.notification.ZenModeSettings;
 import com.android.settings.notificationlight.NotificationLightSettings;
 import com.android.settings.notificationlight.BatteryLightSettings;
 import com.android.settings.euphoria.VolumeSteps;
+import com.android.settings.slim.dslv.ActionListViewSettings;
 
 import com.illusion.box.fragments.*;
 import com.illusion.box.fragments.bar.*;
@@ -59,6 +60,7 @@ import com.illusion.box.fragments.display.*;
 import com.illusion.box.fragments.lock.*;
 import com.illusion.box.fragments.qs.*;
 import com.illusion.box.fragments.interfase.*;
+import com.illusion.box.fragments.navigation.*;
 
 public class SettingsActivity extends PreferenceActivity {
 
@@ -237,6 +239,11 @@ public class SettingsActivity extends PreferenceActivity {
         InterfaceHolderSettings.class.getName(),
         VolumeSteps.class.getName(),
         AppSidebar.class.getName(),
+        NavigationHolderSettings.class.getName(),
+        NavBarButtonStyle.class.getName(),
+        NavbarSettings.class.getName(),
+        NavbarStyleDimenSettings.class.getName(),
+        ActionListViewSettings.class.getName(),
     };
 
     @Override
