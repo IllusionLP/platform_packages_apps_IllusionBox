@@ -245,6 +245,7 @@ public class SettingsActivity extends PreferenceActivity {
         NavbarStyleDimenSettings.class.getName(),
         ActionListViewSettings.class.getName(),
         NavRing.class.getName(),
+        SoundSettings.class.getName(),
     };
 
     @Override

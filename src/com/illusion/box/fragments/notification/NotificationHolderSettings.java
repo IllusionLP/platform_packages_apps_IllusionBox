@@ -89,6 +89,7 @@ public class NotificationHolderSettings extends SettingsPreferenceFragment {
             super(fm);
             frags[0] = new NotificationSettings();
             frags[1] = new ZenModeSettings();
+            frags[2] = new SoundSettings();
         }
 
         @Override
@@ -111,7 +112,8 @@ public class NotificationHolderSettings extends SettingsPreferenceFragment {
         String titleString[];
         titleString = new String[]{
                     getString(R.string.notification_settings),
-                    getString(R.string.zen_mode_settings_title)};
+                    getString(R.string.zen_mode_settings_title),
+                    getString(R.string.advanced_sound_title)};
         return titleString;
     }
 }
