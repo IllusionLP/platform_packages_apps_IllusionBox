@@ -17,7 +17,7 @@
 
      <header
         android:id="@+id/navigation_settings"
-        android:icon="@drawable/ic_settings_navigation_exposed"
+        android:icon="@drawable/ic_settings_navigation"
         android:fragment="com.illusion.box.fragments.navigation.NavigationHolderSettings"
         android:title="@string/navigation_settings_title"
         />
