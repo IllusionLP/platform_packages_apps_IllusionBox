@@ -17,6 +17,18 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
+    <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
+        android:key="enable_task_manager"
+        android:title="@string/enable_task_manager_title"
+        android:summary="@string/enable_task_manager_summary"
+        android:defaultValue="false" />
+
+    <com.android.settings.cyanogenmod.SecureSettingSwitchPreference
+        android:key="qs_show_brightness_slider"
+        android:title="@string/qs_brightness_slider_title"
+        android:summary="@string/qs_brightness_slider_summary"
+        android:defaultValue="true"/>
+
     <PreferenceCategory
         android:title="@string/qs_category_title">
 
@@ -42,12 +54,6 @@
             android:key="qs_use_four_columns"
             android:title="@string/qs_four_columns_title"
             android:defaultValue="false" />
-
-       <com.android.settings.cyanogenmod.SecureSettingSwitchPreference
-            android:key="qs_show_brightness_slider"
-            android:title="@string/qs_brightness_slider_title"
-            android:summary="@string/qs_brightness_slider_summary"
-            android:defaultValue="true"/>
 
     </PreferenceCategory>
 
