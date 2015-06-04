@@ -265,6 +265,8 @@
     <string name="qs_notifications_tile">Notifications</string>
     <string name="qs_title_compass">Compass</string>
     <string name="qs_owls_nest">Owls nest</string>
+    <string name="qs_expanded_desktop_tile">Expanded desktop</string>
+    <string name="qs_screen_off_tile">Screen off</string>
 
     <!-- Navigation bar -->
     <string name="navigation_bar_category">Navigation bar</string>

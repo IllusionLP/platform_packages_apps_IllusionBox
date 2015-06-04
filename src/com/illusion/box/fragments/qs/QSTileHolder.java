@@ -122,6 +122,14 @@ public class QSTileHolder {
                 resourceName = "ic_qs_compass_on";
                 stringId = R.string.qs_title_compass;
                 break;
+            case QSConstants.TILE_EXPANDED_DESKTOP:
+                resourceName = "ic_qs_expanded_desktop";
+                stringId = R.string.qs_expanded_desktop_tile;
+                break;
+            case QSConstants.TILE_SCREEN_OFF:
+                resourceName = "ic_qs_power";
+                stringId = R.string.qs_screen_off_tile;
+                break;
             default:
                 return null;
         }
