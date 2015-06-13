@@ -16,6 +16,7 @@ import android.os.Bundle;
 import android.os.RemoteException;
 import android.os.ServiceManager;
 import android.preference.Preference;
+import android.preference.SlimSeekBarPreference;
 import android.preference.PreferenceActivity;
 import android.preference.PreferenceFragment;
 import android.provider.Settings;
@@ -246,6 +247,7 @@ public class SettingsActivity extends PreferenceActivity {
         ActionListViewSettings.class.getName(),
         NavRing.class.getName(),
         SoundSettings.class.getName(),
+        RecentPanel.class.getName(),
     };
 
     @Override
