@@ -5,55 +5,55 @@
         android:id="@+id/status_bar_settings"
         android:title="@string/status_bar_title"
         android:fragment="com.illusion.box.fragments.bar.StatusBarHolderSettings"
-        android:icon="@drawable/ic_settings_extdesk_hidenavbar"
         />
 
      <header
         android:id="@+id/button_settings"
         android:title="@string/button_pref_title"
         android:fragment="com.illusion.box.fragments.button.ButtonHolderSettings"
-        android:icon="@drawable/ic_settings_buttons"
         />
 
      <header
         android:id="@+id/navigation_settings"
         android:icon="@drawable/ic_settings_more"
         android:fragment="com.illusion.box.fragments.navigation.NavigationHolderSettings"
-        android:title="@string/navigation_settings_title"
         />
 
      <header
         android:id="@+id/notification_drawer_settings"
         android:title="@string/notification_drawer_title"
         android:fragment="com.illusion.box.fragments.qs.NotificationDrawerSettings"
-        android:icon="@drawable/ic_settings_notification_drawer"
         />
 
      <header
         android:id="@+id/display_settings"
         android:title="@string/display_settings"
         android:fragment="com.illusion.box.fragments.display.DisplayHolderSettings"
-        android:icon="@drawable/ic_settings_display"
         />
 
      <header
         android:id="@+id/notification_settings"
         android:title="@string/notification_settings"
         android:fragment="com.illusion.box.fragments.notification.NotificationHolderSettings"
-        android:icon="@drawable/ic_settings_notifications"
         />
 
      <header
         android:id="@+id/lockscreen_settings"
         android:title="@string/lockscreen_settings_title"
         android:fragment="com.illusion.box.fragments.lock.LockscreenHolderSettings"
-        android:icon="@drawable/ic_settings_security"
         />
 
      <header
         android:id="@+id/interfase_settings"
         android:title="@string/interface_settings"
         android:fragment="com.illusion.box.fragments.interfase.InterfaceHolderSettings"
-        android:icon="@drawable/ic_settings_interface"
         />
+
+     <header
+        android:key="kernel_auditor"
+        android:title="@string/kernel_auditor">
+        <intent android:action="android.intent.action.MAIN"
+            android:targetPackage="com.grarak.kerneladiutor"
+            android:targetClass="com.grarak.kerneladiutor.MainActivity" />
+    </header>
 </preference-headers>
