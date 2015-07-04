@@ -234,3 +234,4 @@ public class LockscreenShortcuts extends Fragment implements View.OnClickListene
 
 }
 
+
