@@ -153,7 +153,7 @@ public class LockscreenShortcuts extends Fragment implements View.OnClickListene
 
         mActions.addAction(LockscreenShortcutsHelper.NONE, R.string.lockscreen_none_target);
         mActions.addAction(LockscreenShortcutsHelper.DEFAULT, R.string.lockscreen_default_target);
-        mActions.addAction(ACTION_APP, R.string.select_application);
+        //mActions.addAction(ACTION_APP, R.string.select_application);
     }
 
     @Override
