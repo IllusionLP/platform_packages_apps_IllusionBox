@@ -20,6 +20,12 @@
      <string name="aosip_version">AOSiP version</string>
      <string name="aosip_version_default">Unknown</string>
 
+     <!-- General strings -->
+     <string name="ok">OK</string>
+     <string name="reset">Reset</string>
+     <string name="help">Help</string>
+     <string name="add">Add</string>
+
     <!--IllusionBox page titles-->
     <string name="status_bar_clockndate_title">Clock-N-Battery</string>
     <string name="status_bar_misc_title">Homeless bar settings</string>
@@ -526,5 +532,11 @@
     <!-- Long press on lock screen lock icon to sleep -->
     <string name="longpress_lock_icon_to_sleep_title">Long press lock icon to sleep</string>
     <string name="longpress_lock_icon_to_sleep_summary">This option will not work if both smart lock and accessibility touch exploration are enabled</string>
+
+    <!-- Lockscreen Shortcuts -->
+    <string name="lockscreen_shortcuts_title">App shortcuts</string>
+    <string name="lockscreen_shortcuts_summary">View or change center screen shortcuts</string>
+    <string name="lockscreen_shorcuts_longpress_title">Shortcuts longpress</string>
+    <string name="lockscreen_shorcuts_longpress_summary">Open custom lock screen shortcuts on longpress</string>
 </resources>
 
