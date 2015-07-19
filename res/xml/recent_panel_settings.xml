@@ -18,9 +18,22 @@
         xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
         android:title="@string/recent_panel_category">
 
+        <PreferenceScreen
+            android:id="@+id/app_sidebar"
+            android:title="@string/app_sidebar_title"
+            android:summary="@string/app_sidebar_summary"
+            android:fragment="com.illusion.box.fragments.interfase.AppSidebar" />
+
+        <PreferenceScreen
+            android:id="@+id/gesture_anywhere"
+            android:title="@string/gesture_anywhere_title"
+            android:summary="@string/gesture_anywhere_summary"
+            android:fragment="com.illusion.box.fragments.interfase.GestureAnywhereSettings" />
+
         <SwitchPreference
             android:key="use_slim_recents"
             android:title="@string/use_slim_recents_title"
+            android:summary="@string/use_slim_recents_summary"
             android:defaultValue="true" />
 
         <ListPreference

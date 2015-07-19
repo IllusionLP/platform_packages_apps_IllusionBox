@@ -2,58 +2,59 @@
          android:title="@string/header_category_ib">
 
     <header
-        android:id="@+id/status_bar_settings"
-        android:title="@string/status_bar_title"
-        android:fragment="com.illusion.box.fragments.bar.StatusBarHolderSettings"
-        />
-
-     <header
         android:id="@+id/button_settings"
         android:title="@string/button_pref_title"
-        android:fragment="com.illusion.box.fragments.button.ButtonHolderSettings"
+        android:fragment="com.illusion.box.fragments.button.ButtonSettings"
         />
 
-     <header
+    <header
+        android:id="@+id/display_settings"
+        android:title="@string/display_settings"
+        android:fragment="com.android.settings.DisplaySettings"
+        />
+
+    <header
+        android:id="@+id/interfase_settings"
+        android:title="@string/interface_settings"
+        android:fragment="com.illusion.box.fragments.interfase.RecentPanel"
+        />
+
+    <header
+        android:id="@+id/lockscreen_settings"
+        android:title="@string/lockscreen_settings_title"
+        android:fragment="com.illusion.box.fragments.lock.LockscreenShortcutFragment"
+        />
+
+    <header
         android:id="@+id/navigation_settings"
         android:title="@string/navigation_settings_title"
-        android:fragment="com.illusion.box.fragments.navigation.NavigationHolderSettings"
+        android:fragment="com.illusion.box.fragments.navigation.NavbarSettings"
         />
 
-     <header
+    <header
         android:id="@+id/notification_drawer_settings"
         android:title="@string/notification_drawer_title"
         android:fragment="com.illusion.box.fragments.qs.NotificationDrawerSettings"
         />
 
-     <header
-        android:id="@+id/display_settings"
-        android:title="@string/display_settings"
-        android:fragment="com.illusion.box.fragments.display.DisplayHolderSettings"
-        />
-
-     <header
-        android:id="@+id/notification_settings"
-        android:title="@string/notification_settings"
-        android:fragment="com.illusion.box.fragments.notification.NotificationHolderSettings"
-        />
-
-     <header
-        android:id="@+id/lockscreen_settings"
-        android:title="@string/lockscreen_settings_title"
-        android:fragment="com.illusion.box.fragments.lock.LockscreenHolderSettings"
-        />
-
-     <header
-        android:id="@+id/interfase_settings"
-        android:title="@string/interface_settings"
-        android:fragment="com.illusion.box.fragments.interfase.InterfaceHolderSettings"
-        />
-
-     <header
+    <header
         android:key="kernel_auditor"
         android:title="@string/kernel_auditor">
         <intent android:action="android.intent.action.MAIN"
             android:targetPackage="com.grarak.kerneladiutor"
             android:targetClass="com.grarak.kerneladiutor.MainActivity" />
     </header>
+
+    <header
+        android:id="@+id/notification_settings"
+        android:title="@string/notification_settings"
+        android:fragment="com.android.settings.notification.NotificationSettings"
+        />
+
+    <header
+        android:id="@+id/status_bar_settings"
+        android:title="@string/status_bar_title"
+        android:fragment="com.illusion.box.fragments.bar.StatusBarSettings"
+        />
+
 </preference-headers>

@@ -17,11 +17,6 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
                   android:title="@string/security_settings_title">
 
-        <SwitchPreference
-            android:key="lockscreen_shortcuts_longpress"
-            android:title="@string/lockscreen_shorcuts_longpress_title"
-            android:summary="@string/lockscreen_shorcuts_longpress_summary" />
-
         <PreferenceScreen
                  android:key="lockscreen_shortcuts"
                  android:fragment="com.android.settings.slim.dslv.ActionListViewSettings"
@@ -32,6 +27,28 @@
              <extra android:name="disableLongpress" android:value="true" />
              <extra android:name="useAppPickerOnly" android:value="true" />
         </PreferenceScreen>
+
+        <PreferenceScreen
+            android:id="@+id/lockscreen_targets"
+            android:title="@string/lockscreen_targets_message"
+            android:summary="@string/corner_target_summary"
+            android:fragment="com.illusion.box.fragments.lock.LockscreenShortcuts" />
+
+        <SwitchPreference
+            android:key="lockscreen_shortcuts_longpress"
+            android:title="@string/lockscreen_shorcuts_longpress_title"
+            android:summary="@string/lockscreen_shorcuts_longpress_summary" />
+
+        <com.android.settings.cyanogenmod.SecureSettingSwitchPreference
+            android:key="long_press_lock_icon_to_sleep"
+            android:title="@string/longpress_lock_icon_to_sleep_title"
+            android:summary="@string/longpress_lock_icon_to_sleep_summary" />
+
+        <PreferenceScreen
+            android:id="@+id/lock_screen_weather"
+            android:title="@string/lock_screen_weather_settings_title"
+            android:summary="@string/lock_screen_weather_settings_summary"
+            android:fragment="com.illusion.box.fragments.lock.LockScreenWeatherSettings" />
 
 </PreferenceScreen>
 
