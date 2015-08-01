@@ -16,7 +16,7 @@ import android.os.Bundle;
 import android.os.RemoteException;
 import android.os.ServiceManager;
 import android.preference.Preference;
-import android.preference.PreferenceActivity;
+import android.preference.PreferenceDrawerActivity;
 import android.preference.PreferenceFragment;
 import android.provider.Settings;
 import android.text.TextUtils;
@@ -54,11 +54,9 @@ import com.android.settings.euphoria.VolumeSteps;
 import com.illusion.box.fragments.*;
 import com.illusion.box.fragments.bar.*;
 import com.illusion.box.fragments.button.*;
-import com.illusion.box.fragments.notification.*;
-import com.illusion.box.fragments.display.*;
 import com.illusion.box.fragments.lock.*;
 
-public class SettingsActivity extends PreferenceActivity {
+public class SettingsActivity extends PreferenceDrawerActivity {
 
     private static final String TAG = "illusion_Settings";
 
@@ -210,13 +208,11 @@ public class SettingsActivity extends PreferenceActivity {
     }
 
     private static final String[] ENTRY_FRAGMENTS = {
-        StatusBarHolderSettings.class.getName(),
-        ButtonHolderSettings.class.getName(),
-        DisplayHolderSettings.class.getName(),
+        StatusBarSettings.class.getName(),
+        ButtonSettings.class.getName(),
         DisplaySettings.class.getName(),
         WallpaperTypeSettings.class.getName(),
         WifiDisplaySettings.class.getName(),
-        NotificationHolderSettings.class.getName(),
         NotificationSettings.class.getName(),
         NotificationAppList.class.getName(),
         NotificationAccessSettings.class.getName(),
@@ -224,11 +220,9 @@ public class SettingsActivity extends PreferenceActivity {
         ZenModeSettings.class.getName(),
         NotificationLightSettings.class.getName(),
         BatteryLightSettings.class.getName(),
-        LockscreenHolderSettings.class.getName(),
         VolumeSteps.class.getName(),
     };
 
-    @Override
     protected boolean isValidFragment(String fragmentName) {
         // Almost all fragments are wrapped in this,
         // except for a few that have their own activities.
@@ -354,7 +348,7 @@ public class SettingsActivity extends PreferenceActivity {
             }
         }
 
-        // Ignore the adapter provided by PreferenceActivity and substitute ours
+        // Ignore the adapter provided by PreferenceDrawerActivity and substitute ours
         // instead
         super.setListAdapter(new HeaderAdapter(this, mHeaders));
     }
